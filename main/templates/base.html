@@ -2,27 +2,35 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}Portfolio - Home{% endblock title %}</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% block extrahead %}
-    {% endblock extrahead %}
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    {% block extrahead %} {% endblock extrahead %}
+  </head>
+  <body>
     <header>
-        <ul class="nav-menu">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+      <ul class="nav-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </header>
-    <main>
-        {% block content %}
-        {% endblock content %}
-    </main>
+    <main>{% block content %} {% endblock content %}</main>
 
-    {% block extra_js %}
-    {% endblock extra_js %}
-</body>
+    {% block extra_js %} {% endblock extra_js %}
+
+    <footer>
+      <p>&copy; Henry's Portfolio</p>
+      <p>
+        <a href="https://github.com/henrie-ibeh">GitHub</a>
+        <a href="https://www.linkedin.com/in/henry-ibeh-971061197/">LinkedIn</a>
+        <a href="https://x.com/Henriefloat">Twitter</a>
+        <a href="https://www.instagram.com/its_a_floating_world/">Instagram</a>
+        <a href="https://web.facebook.com/ibehuk">Facebook</a>
+        <a href="https://www.youtube.com/@ibehhenrie">YouTube</a>
+        <a href="ibehhenrie@gmail.com">Email</a>
+      </p>
+    </footer>
+  </body>
 </html>
